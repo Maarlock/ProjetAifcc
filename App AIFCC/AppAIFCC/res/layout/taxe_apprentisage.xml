@@ -2,15 +2,287 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#ff8990" >
-    
-    <TextView android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Page Frament Taxe Apprentisage.xml"
-        android:textSize="20dp"
-        android:layout_centerInParent="true"/>
-    
+    android:background="@drawable/fond_aifcc"
+    android:orientation="vertical" >
 
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="MyScrollView"
+         >
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical" >
+        
+        <!--  TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="TAXE D'APPRENTISSAGE"
+        android:textSize="40sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:shadowColor="#7F000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="2"
+        android:textAppearance="?android:attr/textAppearanceLarge" /-->
+        
+        <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:text='Chaque année, vous êtes amené à verser votre taxe d’apprentissage pour le 28 février.
+L’A.I.F.C.C, organisme de formation des Chambres de Commerce et d’Industrie du Calvados, dans le cadre de son " École technique privée hors contrat ", est habilitée à percevoir cette taxe.' />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text='Nous faisons bénéficier les élèves rencontrant des difficultés financières :' />
+    
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:drawableLeft="@drawable/fleche_marron"
+        android:drawablePadding="10dp"
+        android:text='Aide aux stagiaires en difficulté financière' />
+    
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:drawableLeft="@drawable/fleche_marron"
+        android:drawablePadding="10dp"
+        android:text='Cours de soutien gratuits pour les stagiaires' />
+    
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:drawableLeft="@drawable/fleche_marron"
+        android:drawablePadding="10dp"
+        android:text='Mise en place d’ateliers spécialisés gratuits, pour la recherche d’emploi ou de stage' />
+    
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text='Votre versement assure également une partie du fonctionnement de l’école :' />
+    
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:drawableLeft="@drawable/fleche_marron"
+        android:drawablePadding="10dp"
+        android:text='Investissement dans des équipements pédagogiques de pointe : achat de nouveaux outils pédagogiques, mise à niveau des équipements existants' />
+    
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:drawableLeft="@drawable/fleche_marron"
+        android:drawablePadding="10dp"
+        android:text='Investissement dans des équipements pédagogiques de pointe : achat de nouveaux outils pédagogiques, mise à niveau des équipements existants' />
+    
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:drawableLeft="@drawable/fleche_marron"
+        android:drawablePadding="10dp"
+        android:text='Développement du Centre de ressources / espace documentation, renouvellement du fond documentaire' />
+    
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="30sp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:text='Vous pouvez verser votre contribution par l’intermédiaire de votre Chambre de Commerce et d’Industrie, ou d’un organisme collecteur. Il vous suffit d’inscrire " AIFCC Insertion, code école 0142321X " sur votre bordereau de versement.
+Nous sommes habilités à percevoir la taxe d’apprentissage au titre du Barème Catégorie B pour les formations de niveaux II et III et par cumul soit pour les catégories A + B soit pour les catégories B + C.' />
+    
+    </LinearLayout>
+    
+    </ScrollView>
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:drawable="@drawable/bouton_cote"
+            android:background="@drawable/bouton_cote" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#d8d9da"
+            android:orientation="vertical" >
+
+            <TextView
+	        android:id="@+id/textView6"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/textView2"
+	        android:layout_below="@+id/textView2"
+	        android:layout_marginTop="30dp"
+	        android:textSize="20sp"
+	        android:textColor="#000"
+	        android:textStyle="bold"
+	        android:text='Présentation' />
+           <TextView
+	        android:id="@+id/textView6"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/textView1"
+	        android:layout_below="@+id/textView1"
+	        android:layout_marginTop="30dp"
+	        android:textSize="20sp"
+	        android:textColor="#000"
+	        android:textStyle="bold"
+	        android:text='Notre métier' />
+           <TextView
+	        android:id="@+id/textView6"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/textView1"
+	        android:layout_below="@+id/textView1"
+	        android:layout_marginTop="30dp"
+	        android:textSize="20sp"
+	        android:textColor="#000"
+	        android:textStyle="bold"
+	        android:text='BVE' />
+           <TextView
+	        android:id="@+id/textView6"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/textView1"
+	        android:layout_below="@+id/textView1"
+	        android:layout_marginTop="30dp"
+	        android:textSize="20sp"
+	        android:textColor="#000"
+	        android:textStyle="bold"
+	        android:text='Contacts' />
+           <TextView
+	        android:id="@+id/textView6"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/textView1"
+	        android:layout_below="@+id/textView1"
+	        android:layout_marginTop="30dp"
+	        android:textSize="20sp"
+	        android:textColor="#000"
+	        android:textStyle="bold"
+	        android:text='Demandes de renseignements' />
+           <TextView
+	        android:id="@+id/textView6"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/textView1"
+	        android:layout_below="@+id/textView1"
+	        android:layout_marginTop="30dp"
+	        android:textSize="20sp"
+	        android:textColor="#000"
+	        android:textStyle="bold"
+	        android:text="L'AIFCC recrute" />
+           <TextView
+	        android:id="@+id/textView6"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/textView1"
+	        android:layout_below="@+id/textView1"
+	        android:layout_marginTop="30dp"
+	        android:textSize="20sp"
+	        android:textColor="#000"
+	        android:textStyle="bold"
+	        android:text='Photos / vidéos' />
+            <TextView
+	        android:id="@+id/textView6"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/textView1"
+	        android:layout_below="@+id/textView1"
+	        android:layout_marginTop="30dp"
+	        android:textSize="20sp"
+	        android:textColor="#000"
+	        android:textStyle="bold"
+	        android:text='Liens' />
+
+        </LinearLayout>
+    </SlidingDrawer>
+    
 </RelativeLayout>
